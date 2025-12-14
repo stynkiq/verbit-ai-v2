@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verbit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="logo-dot"></div>
+      <h1 class="brand">Verbit</h1>
+      <span class="tagline">Conversational clarity, gradient glow.</span>
+    </header>
+
+    <main class="chat-container">
+      <div id="chat-log" aria-live="polite"></div>
+
+      <div class="chat-input">
+        <input
+          id="user-input"
+          type="text"
+          placeholder="Type a message for Verbit…"
+          autocomplete="off"
+        />
+        <button id="send-btn" aria-label="Send" onclick="sendMessage()">Send</button>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <span>Powered by OpenAI • Verbit UI</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
