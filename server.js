@@ -6,6 +6,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(express.static(__dirname)); // if files are at root
+
+
 app.post("/chat", async (req, res) => {
   const { message } = req.body;
 
